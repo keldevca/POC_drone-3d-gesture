@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drone 3D - Kelly CLOVIS</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/",
+                "@mediapipe/tasks-vision": "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3/vision_bundle.mjs"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <video id="webcam"
+        style="position: absolute; left: 10px; top: 10px; width: 160px; height: 120px; z-index: 100; border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; transform: rotateY(180deg); object-fit: cover;"
+        autoplay playsinline></video>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
